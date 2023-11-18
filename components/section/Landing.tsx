@@ -18,7 +18,7 @@ const Landing = () => {
           </p>
           <div className="flex w-full max-w-sm items-center space-x-2">
             <Input type="email" placeholder="Enter Your Email"  className="rounded-full"/>
-            <Button type="submit">Let &apos s Talk</Button>
+            <Button type="submit">Let &apos; s Talk</Button>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

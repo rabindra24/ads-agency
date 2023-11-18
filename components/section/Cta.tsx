@@ -23,7 +23,7 @@ const Cta = () => {
           </h1>
           <div className="space-y-4">
             <p className="text-white">
-              Ready to transform your digital dresence? Let &apos s create magic
+              Ready to transform your digital dresence? Let &apos; s create magic
               together! book our services now!
             </p>
             <Button className="flex-shrink-0 bg-white text-black  border-0 py-2 px-8 rounded-full text-lg mt-10 sm:mt-0">
