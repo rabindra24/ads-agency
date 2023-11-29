@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { footer } from "@/constants/constant";
+import { footer, navbar } from "@/constants/constant";
 import { logo } from "@/public/images/images";
 import Image from "next/image";
 import { Button } from "../ui/button";
@@ -30,14 +30,15 @@ const Footer = () => {
           </Link>
         </div>
 
-        <ul className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center space-y-2">
-          {footer.map((item, idx) => (
-            <li
-              className="lg:w-1/3 md:w-1/2 w-full px-4 font-medium list-none"
+        <ul className="flex-grow flex flex-wrap md:pl-20  -mb-10 md:mt-20 mt-10 md:text-left text-center space-y-2">
+          {navbar.map((item, idx) => (
+            <Link
+              href={item.link}
               key={idx}
+              className="lg:w-1/2 md:w-1/2 w-full px-4 font-medium list-none"
             >
-              {item.title}
-            </li>
+              <li>{item.title}</li>
+            </Link>
           ))}
         </ul>
       </div>

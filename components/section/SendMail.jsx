@@ -43,6 +43,7 @@ const SendMail = () => {
         type="email"
         placeholder="Enter Your Email"
         className="rounded-full"
+        required
       />
       <Button type="submit">Let &apos; s Talk</Button>
     </form>
