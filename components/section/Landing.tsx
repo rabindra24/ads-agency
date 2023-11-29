@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 import { main } from "@/public/images/images";
+import SendMail from './SendMail'
 
 const Landing = () => {
   return (
@@ -16,10 +17,13 @@ const Landing = () => {
           <p className="mb-8 leading-relaxed">
             We care about our work and we care about our clients.
           </p>
-          <div className="flex w-full max-w-sm items-center space-x-2">
+          <SendMail/>
+
+          {/* //remove */}
+          {/* <div className="flex w-full max-w-sm items-center space-x-2">
             <Input type="email" placeholder="Enter Your Email"  className="rounded-full"/>
             <Button type="submit">Let &apos; s Talk</Button>
-          </div>
+          </div> */}
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image

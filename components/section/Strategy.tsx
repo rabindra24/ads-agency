@@ -15,7 +15,7 @@ const Strategy = () => {
       content:
         "We meet with you to learn about your business, your goals, and your target audience.",
       image: (
-        <MagnifyingGlassIcon className="    md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
+        <MagnifyingGlassIcon className="md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
       ),
     },
     {
@@ -23,7 +23,7 @@ const Strategy = () => {
       content:
         "We develop a customized marketing strategy that is based on your unique needs and goals.",
       image: (
-        <ChartPieIcon className="   md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
+        <ChartPieIcon className="md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
       ),
     },
     {
@@ -31,7 +31,7 @@ const Strategy = () => {
       content:
         "We execute our strategy using the latest digital marketing tools and techniques.",
       image: (
-        <CheckBadgeIcon className="  md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
+        <CheckBadgeIcon className="md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
       ),
     },
     {
@@ -39,7 +39,7 @@ const Strategy = () => {
       content:
         "We track the results of our campaigns so that we can make adjustments as needed.",
       image: (
-        <ScaleIcon className="   md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
+        <ScaleIcon className="md:w-[70px] md:h-[70px] w-[55px] h-[55px] md:p-3 p-2 rounded-full  bg-primary text-white md:mr-6 mr-4" />
       ),
     },
   ];
@@ -56,19 +56,17 @@ const Strategy = () => {
           src={works}
           width={200}
           height={150}
-          alt="main Image"
+          alt="Advertising Agency"
           className="w-full"
         />
       </div>
-      <div className="md:w-1/2 md:px-4 mt-10 md:space-y-10 space-y-4">
+      <div className="md:w-1/2 md:px-4 md:mt-20 mt-10 md:space-y-10 space-y-4">
         {data.map((item, idx) => (
           <div className="flex  items-center" key={idx}>
             {item.image}
             <div className="w-full h-full flex-col flex-1 justify-center">
               <h2 className="text-2xl font-400">{item.title}</h2>
-              <p className="text-light text-sm">
-                {item.content}
-              </p>
+              <p className="text-light text-sm">{item.content}</p>
             </div>
           </div>
         ))}

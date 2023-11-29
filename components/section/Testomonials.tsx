@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Testomonials = () => {
   return (
-    <section className=" body-font" id="testmonials">
+    <section className=" body-font sm:px-10 px-5" id="testmonials">
       <div className="container px-5 py-14   ">
         <h1 className="font-semibold md:text-5xl text-3xl text-center mb-10">
           Testimonials

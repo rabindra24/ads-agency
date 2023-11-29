@@ -55,14 +55,23 @@ export default function Navbar() {
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Embrace</span>
+            <span className="sr-only">Roastharapy</span>
             {theme === "dark" ? (
-              <Image className="h-8 w-auto" src={nightlogo} alt="Embrace || Advertising" />
+              <Image
+                className="md:h-14 h-10 w-auto"
+                src={nightlogo}
+                alt="Roastharapy || Advertising"
+              />
             ) : (
-              <Image className="h-8 w-auto" src={logo} alt="Embrace || Advertising" />
+              <Image
+                className="md:h-14 h-10 w-auto"
+                src={logo}
+                alt="Roastharapy || Advertising"
+              />
             )}
           </a>
         </div>
+
         <div className="md:hidden">
           {theme === "dark" ? (
             <SunIcon
@@ -72,7 +81,7 @@ export default function Navbar() {
           ) : (
             <MoonIcon
               onClick={() => handleMode()}
-              className="rounded-full  text-black w-[30px] h-[30px] "
+              className="rounded-full  text-primary w-[30px] h-[30px] "
             />
           )}
         </div>
@@ -106,7 +115,7 @@ export default function Navbar() {
           ) : (
             <MoonIcon
               onClick={() => handleMode()}
-              className="rounded-full  text-black w-[30px] h-[30px] "
+              className="rounded-full  text-primary w-[30px] h-[30px] "
             />
           )}
 
@@ -116,7 +125,15 @@ export default function Navbar() {
           {/* <a href="#contact" className=" text-sm font-semibold leading-6 text-gray-900">
             Book a Call <span aria-hidden="true">&rarr;</span>
           </a> */}
-          <Button className="rounded-full">Book a Call</Button>
+          <a href={"#contact"}>
+            <Button
+              className="rounded-full"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {" "}
+              Book a Call
+            </Button>
+          </a>
         </div>
       </nav>
       <Dialog
@@ -130,9 +147,17 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               {theme === "light" ? (
-                <Image className="h-5 w-auto" src={logo} alt="Embrace || Advertising" />
+                <Image
+                  className="h-10 w-auto"
+                  src={logo}
+                  alt="Roastharapy || Advertising"
+                />
               ) : (
-                <Image className="h-5 w-auto" src={nightlogo} alt="Embrace || Advertising" />
+                <Image
+                  className="h-10 w-auto"
+                  src={nightlogo}
+                  alt="Roastharapy || Advertising"
+                />
               )}
             </a>
             {theme === "dark" ? (
@@ -143,7 +168,7 @@ export default function Navbar() {
             ) : (
               <MoonIcon
                 onClick={() => handleMode()}
-                className="rounded-full  text-black w-[30px] h-[30px] "
+                className="rounded-full  text-primary w-[30px] h-[30px] "
               />
             )}
             <button
@@ -159,17 +184,25 @@ export default function Navbar() {
             <div className="-my-6 divide-y ">
               <div className="space-y-2 py-6">
                 {navbar.map((item, idx) => (
-                  <a
-                    href={item.link}
+                  <button
                     key={idx}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-foreground hover:text-background"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
-                    {item.title}
-                  </a>
+                    <a href={item.link}>{item.title}</a>
+                  </button>
                 ))}
               </div>
               <div className="py-6">
-                <Button className="rounded-full">Book a Call</Button>
+                <a href={"#contact"}>
+                  <Button
+                    className="rounded-full"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {" "}
+                    Book a Call
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

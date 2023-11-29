@@ -9,6 +9,7 @@ import {
 
 import { accordians } from "@/constants/constant";
 import { Input } from "../ui/input";
+import SendMail from "./SendMail";
 
 const Accordian = () => {
   return (
@@ -33,18 +34,19 @@ const Accordian = () => {
               Follow our newsletter. We will regulary update our latest project
               and availability.
             </p>
-            <div className="flex w-full max-w-sm items-center space-x-2">
+            <SendMail/>
+            {/* <div className="flex w-full max-w-sm items-center space-x-2">
               <Input
                 type="email"
                 placeholder="Enter Your Email"
                 className="rounded-full"
               />
               <Button type="submit">Let &apos; s Talk</Button>
-            </div>
-            <Button className="bg-primary text-background">
+            </div> */}
+            {/* <Button className="bg-primary text-background">
               {" "}
               Learn More &rarr;
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

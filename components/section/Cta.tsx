@@ -1,5 +1,6 @@
 import { banner } from "@/public/images/images";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
 
@@ -21,14 +22,16 @@ const Cta = () => {
           <h1 className="flex-grow sm:pr-16 text-5xl  text-white font-thin">
             Elevate your brand Today!
           </h1>
-          <div className="space-y-4">
-            <p className="text-white">
-              Ready to transform your digital dresence? Let &apos; s create magic
-              together! book our services now!
+          <div className="md:text-left">
+            <p className="text-white mb-2">
+              Ready to transform your digital dresence? Let &apos; s create
+              magic together! book our services now!
             </p>
-            <Button className="flex-shrink-0 bg-white text-black  border-0 py-2 px-8 rounded-full text-lg mt-10 sm:mt-0">
-              Book Call
-            </Button>
+            <Link href={"#contact"} scroll={true}>
+              <Button className="flex-shrink-0 bg-white text-black  border-0 py-2 px-8 rounded-full text-lg mt-10 sm:mt-0">
+                Book Call
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

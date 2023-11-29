@@ -33,7 +33,7 @@ const Team = () => {
               Discover the brilliance behind Embrace. Our team blends innovation
               and artistry to craft digital wonders that captivate
             </p>
-            <Button> Learn More &rarr;</Button>
+            {/* <Button> Learn More &rarr;</Button> */}
           </div>
         </div>
       </div>

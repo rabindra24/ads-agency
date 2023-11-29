@@ -25,7 +25,7 @@ const Commitments = () => {
               We are committed to working with you collaboratively to understand
               your goals and create a strategy that will achieve them.
             </p>
-            <p className="text-primary">Learn More &rarr;</p>
+            {/* <p className="text-primary">Learn More &rarr;</p> */}
           </div>
         </div>
       </div>

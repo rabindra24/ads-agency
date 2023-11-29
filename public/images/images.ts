@@ -11,7 +11,9 @@ import frame from './Frame 114.png'
 import google from './google.svg'
 import grid from './grid.png'
 import laptop from './laptop.png';
-import logo from './logo.svg'
+// import logo from './logo.svg' //Changing Logo
+import logo from './logo.png'
+import roaslogo from './logo.jpg'
 import main from './main.png'
 import measures from './measures.svg'
 import microsoft from './microsoft.svg'
@@ -29,7 +31,8 @@ import yellow from './yellow.png'
 import facebook from './facebook.svg'
 import twitter from './twitter.svg'
 import instagram from './instagram.svg'
-import nightlogo from './nightlogo.svg'
+// import nightlogo from './nightlogo.svg'
+import nightlogo from './logo.png'
 
 export {
     nightlogo,
@@ -63,5 +66,5 @@ export {
     user2,
     user3,
     works,
-    yellow
+    yellow,
 }

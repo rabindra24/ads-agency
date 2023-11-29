@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { nightlogo } from "@/public/images/images";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 const Footer = () => {
   const { theme, setTheme } = useTheme();
@@ -15,13 +16,20 @@ const Footer = () => {
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <div className="flex title-font font-medium items-center md:justify-start justify-center mb-10">
             {theme === "dark" ? (
-              <Image className="h-8 w-auto" src={nightlogo} alt="advertising" />
+              <Image
+                className="h-14 w-auto"
+                src={nightlogo}
+                alt="advertising"
+              />
             ) : (
-              <Image className="h-8 w-auto" src={logo} alt="advertising" />
+              <Image className="h-14 w-auto" src={logo} alt="advertising" />
             )}
           </div>
-          <Button className="rounded-full">Contact Us</Button>
+          <Link href={"#contact"}>
+            <Button className="rounded-full">Contact Us</Button>
+          </Link>
         </div>
+
         <ul className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center space-y-2">
           {footer.map((item, idx) => (
             <li
@@ -36,15 +44,14 @@ const Footer = () => {
       <div className="">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className=" text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} Developed By Rabindra —
+            © {new Date().getFullYear()} Developed By RoasTharapy —
             <a
               href="https://twitter.com/knyttneve"
               rel="noopener noreferrer"
               className=" ml-1"
               target="_blank"
-
             >
-              @rabindra
+              @RoasTharapy
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
@@ -68,7 +75,6 @@ const Footer = () => {
               className="ml-3 "
               href="https://www.instagram.com/rabindra_nath_mahat01/"
               title="facebook"
-
             >
               <svg
                 fill="none"

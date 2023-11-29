@@ -174,6 +174,12 @@ export const clients : clientsData[] = [
         content : 'Embrace really nails it! Creative brilliance, approachable style. They re the partners you want—artistry meets strategy. Thrilled with what they achieved!"',
         image : user3
     },
+    {
+        name : 'Jacob Joshua',
+        post : 'Chief Manager',
+        content : 'Embrace really nails it! Creative brilliance, approachable style. They re the partners you want—artistry meets strategy. Thrilled with what they achieved!"',
+        image : user3
+    },
     
 ]
 
